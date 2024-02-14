@@ -31,17 +31,19 @@ from employees
 group by job_lvl;
 
 -- 6.Liste des employes par maison d'edition
+-- ou SELECT CONCAT(fname,lname) as employes, pub_name from employees,publishers where employ.pub_id=publishers.pub_id
 SELECT   e.fname, p.pub_id
 FROM employees e , publishers p 
 where e.pub_id = p.pub_id;
 
 -- 7. Salaires horaires moyens des employes par maison d'edition
-SELECT MIN(salary),  e.fname, p.pub_id
+-- select pub_name, avg(salary).....
+SELECT AVG(salary),  e.fname, p.pub_id
 FROM employees e , publishers p 
 where e.pub_id = p.pub_id group by e.pub_id ;
 
 -- 8. Effectif(nombre) d'employées de niveau SEINIOR par maison d'edition
-select count(*) as nombre_employe , e.job_lvl as niveau
-FROM employees e join publishers p 
-on e.pub_id = p.pub_id where e.job_lvl="SEINIOR" ;
+ select pub_name, count(emp_id) as effectif 
+ from publishers join employees on publishers.pub_id=employees.pub_id 
+ where employees.job_lvl="seinior" group by (pub_name);
 
