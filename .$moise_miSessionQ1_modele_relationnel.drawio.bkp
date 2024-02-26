@@ -1,0 +1,34 @@
+<mxfile host="Electron" modified="2024-02-26T17:23:32.945Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/23.1.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="B1ncLNhmuRBgNX9XsG-E" version="23.1.5" type="device">
+  <diagram name="modele_relationnnel" id="K22IMhGTIvqdRt6gtKjN">
+    <mxGraphModel dx="665" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="CQKy-OLcfSeAjiSryRfV-1" value="etudiants" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="70" width="160" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="CQKy-OLcfSeAjiSryRfV-2" value="&lt;u&gt;IUC&lt;/u&gt;&lt;br&gt;et_nom&lt;br&gt;et_prenom&lt;br&gt;et_dateN&lt;div&gt;et_paysOrig&lt;/div&gt;&lt;div&gt;et_numeroTel&lt;/div&gt;&lt;div&gt;et_numPassport&lt;/div&gt;&lt;div&gt;et_statutMat&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="CQKy-OLcfSeAjiSryRfV-1">
+          <mxGeometry y="50" width="160" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="CQKy-OLcfSeAjiSryRfV-3" value="conjoints" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="70" width="160" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="CQKy-OLcfSeAjiSryRfV-4" value="&lt;u&gt;id_conjoint&lt;/u&gt;&lt;br&gt;#IUC&lt;br&gt;conj_nom&lt;br&gt;conj_prenom&lt;br&gt;conj_dateN&lt;br&gt;conj_pays&lt;br&gt;conj_numPassport&lt;br&gt;conj_numTele&lt;br&gt;conj_statutMat" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="CQKy-OLcfSeAjiSryRfV-3">
+          <mxGeometry y="50" width="160" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="CQKy-OLcfSeAjiSryRfV-8" value="Testlangue" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="320" width="170" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="CQKy-OLcfSeAjiSryRfV-9" value="&lt;u&gt;#IUC&lt;/u&gt;&lt;br&gt;&lt;u&gt;id_test&lt;/u&gt;&lt;br&gt;test_nom&lt;br&gt;test_expEcrit&lt;br&gt;test_expOral&lt;br&gt;test_lecture&lt;br&gt;test_Ecoute&lt;br&gt;test_date&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="CQKy-OLcfSeAjiSryRfV-8">
+          <mxGeometry y="50" width="170" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="CQKy-OLcfSeAjiSryRfV-10" value="Agents" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="320" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="CQKy-OLcfSeAjiSryRfV-11" value="&lt;u&gt;id_agent&lt;/u&gt;&lt;br&gt;&lt;u&gt;#IUC&lt;br&gt;&lt;/u&gt;agent_code&lt;br&gt;agent_commentaire" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="CQKy-OLcfSeAjiSryRfV-10">
+          <mxGeometry y="50" width="160" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
