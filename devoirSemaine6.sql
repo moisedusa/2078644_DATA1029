@@ -20,7 +20,14 @@ WHERE p.country = 'Canada';
 -- 4. Noms complets des employés qui ont un manager
 SELECT concat(e.fname,' ', e.lname) as noms_complet
 FROM employees e
-WHERE e.job_lvl <> 'STAGIAIRE';
+WHERE e.job_lvl <> 'seinior';
+-- SOLUTION CORRECT
+ SELECT
+  CONCAT (e.fname, ' ', e.lname) AS employee_name, e.job_lvl, p.pub_name AS employer
+FROM employees e JOIN publishers p ON e.pub_id = p.pub_id
+WHERE p.pub_id IN (
+-- employeur ayant un manager
+SELECT pub_id FROM employees WHERE job_lvl = "SEINIOR") ORDER BY employer;
 
 -- 5. Noms complets des employés qui ont un salaire au-dessus de la moyenne de salaire chez leur employeur.
 SELECT concat(e.fname,' ',e.lname) as noms_complet, e.salary, p.pub_name AS employer
